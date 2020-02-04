@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>日历</title>
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="./static/css/main.css">
+</head>
+<body>
+  <section class="calendar">
+    <div class="calendar-header">
+      <div class="logo">27</div>
+      <div class="date-title">
+        <span class="year"></span>年
+        <span class="month"></span>月
+        <span class="day"></span>日
+        <span class="week-day"></span>
+      </div>
+      <div class="cancel">x</div>
+    </div>
+    <div class="calendar-content">
+      <div class="content-header">
+        <div class="header-left">
+          <p class="time"></p>
+          <p class="festival"></p>
+        </div>
+        <div class="header-right">
+          <div class="back-today">返回今天</div>
+          <div class="date-picker">
+            <div class="choose-common year-choose">
+              <span class="last-year"><</span>
+              <span class="chooseed-year"></span>
+              <span class="next-year">></span>
+            </div>
+            <div class="choose-common month-choose">
+              <span class="last-month"><</span>
+              <span class="chooseed-month"></span>
+              <span class="next-month">></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="content-main">
+        <div class="main-week">
+        </div>
+        <ul class="main-day">
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script src="./static/js/main.js"></script>
+</body>
+</html>

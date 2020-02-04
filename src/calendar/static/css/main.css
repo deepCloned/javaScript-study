@@ -1,0 +1,153 @@
+.calendar{
+  width: 760px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+/* 标题栏 */
+.calendar .calendar-header{
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbfbfb;
+  color: #333;
+  font-size: 12px;
+}
+.calendar-header .logo{
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: #eb3a49;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* 日期选择+展示主题区域 */
+.calendar .calendar-content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 80px;
+}
+.calendar-content .content-header{
+  width: 606px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.header-left{
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+.header-left .time{
+  font-size: 20px;
+  color: #000;
+}
+.header-left .festival{
+  color: #222;
+  margin-top: 8px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.header-right{
+  display: flex;
+  flex-direction: column;
+  width: 146px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.header-right .back-today{
+  width: 100%;
+  text-align: right;
+  color: #6294fc;
+  cursor: pointer;
+}
+.back-today:hover{
+  color: #7ba5fb;
+}
+.header-right .date-picker{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+
+.choose-common span{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  cursor: pointer;
+}
+.choose-common span:nth-of-type(2) {
+  width: 32px;
+  text-align: center;
+}
+.date-picker .month-choose{
+  margin-left: 4px;
+}
+
+.content-main{
+  width: 100%;
+}
+.content-main .main-week{
+  width: 606px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-week span{
+  width: 86px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  color: #666;
+}
+.content-main .main-day{
+  width: 606px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 6px;
+}
+
+.main-day li{
+  width: 86px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.active-curday{
+  color: #2ca7fb;
+}
+.active{
+  background-color: #2ca7fb;
+  color: #fff;
+}
